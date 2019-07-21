@@ -1,7 +1,7 @@
 FROM node:carbon
 Maintainer mohsen.sehili@gmail.com
 WORKDIR /usr/src/app
-COPY package*.json .
+COPY package*.json ./
 CMD npm install 
 COPY . .
 EXPOSE 8080
